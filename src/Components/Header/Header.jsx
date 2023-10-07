@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
 
 
+
 const Header = () => {
 
     
@@ -12,7 +13,7 @@ const Header = () => {
            <div className="container mx-auto mt-10">
             <nav className="flex items-center gap-5 justify-between">
                 <div>
-                 <img src={logo} alt="" />
+                 <img className="w-52 h-14" src={logo} alt="" />
                 </div>
 
                 {/* This is banner text */}
@@ -20,9 +21,9 @@ const Header = () => {
                 <ul className="flex gap-5 md:gap-10 lg:gap-12">
                     <li>
                         <NavLink
-                            to="/"
+                            to="/" style={{fontWeight:"bold",fontSize:"25px"}}
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                                isPending ? "pending" : isActive ? "text-green-600 underline" : ""
                             }
                         >
                          Home
@@ -31,9 +32,9 @@ const Header = () => {
 
                     <li>
                         <NavLink
-                            to="/login"
+                            to="/login" style={{fontWeight:"bold",fontSize:"25px"}}
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                                isPending ? "pending" : isActive ? "text-green-600 underline" : ""
                             }
                         >
                          Login
@@ -42,20 +43,25 @@ const Header = () => {
 
                     <li>
                         <NavLink
-                            to="/register"
+                            to="/register" style={{fontWeight:"bold",fontSize:"25px"}}
                             className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                                isPending ? "pending" : isActive ? "text-green-600 underline" : ""
                             }
                         >
                          Register
                         </NavLink>
                     </li>
                 </ul>
+                
+                </div>
+                <div>
+                    <button className="bg-green-600 text-gray-200 font-bold text-2xl px-5 py-3 rounded-xl">Sign In</button>
                 </div>
             </nav>
+            
         </div>
 
-        
+       
         </div>
     );
 };
