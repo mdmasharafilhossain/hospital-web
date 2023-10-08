@@ -5,8 +5,8 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 const AboutUs = () => {
     return (
-        <div>
-           <h2 className="font-bold text-green-600  text-5xl text-center mt-16">About Us</h2>
+        <div className="bg-gray-100">
+           <h2 className="font-bold text-green-600  text-5xl text-center pt-16">About Us</h2>
            <div className="border-b-4 mt-5 w-32 mx-auto border-green-500"></div>
            {/* text and image div  */}
            <div className="flex  flex-1 gap-20 mt-10 mx-10">
