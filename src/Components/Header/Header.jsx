@@ -9,7 +9,8 @@ const Header = () => {
     
 
     return (
-        <div className="shadow-xl pb-10 fixed top-0 left-0 right-0 border">
+        <div className="">
+            <div className="shadow-xl bg-white z-50  pb-5 fixed top-0 left-0 right-0 border">
            <div className="container mx-auto mt-10 ">
             <nav className="flex items-center gap-5 justify-between">
                 <div>
@@ -62,6 +63,7 @@ const Header = () => {
         </div>
 
        
+        </div>
         </div>
     );
 };
