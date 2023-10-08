@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Brain",
+      "image": "https://i.ibb.co/9TMwHtX/brain.png",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 19.99,
+      "short_description": "High-quality product",
+      "description": "Product A is a top-quality item with advanced features and excellent performance."
+    },
+    {
+      "id": 2,
+      "name": "Product B",
+      "image": "product_b.jpg",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 24.99,
+      "short_description": "Elegant design",
+      "description": "Product B features an elegant design, perfect for any occasion."
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "image": "product_c.jpg",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 15.00,
+      "short_description": "Affordable option",
+      "description": "Product C offers great value for its price, making it an affordable choice."
+    },
+    {
+      "id": 4,
+      "name": "Product D",
+      "image": "product_d.jpg",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 29.99,
+      "short_description": "Versatile and durable",
+      "description": "Product D is a versatile and durable product, built to last and adapt to your needs."
+    },
+    {
+      "id": 5,
+      "name": "Product E",
+      "image": "product_e.jpg",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 21.50,
+      "short_description": "Sleek and modern",
+      "description": "Product E boasts a sleek and modern design, adding a touch of style to your daily routine."
+    },
+    {
+      "id": 6,
+      "name": "Product F",
+      "image": "product_f.jpg",
+      "image_2": "https://i.ibb.co/q98SrRK/department-2.jpg",
+      "price": 18.99,
+      "short_description": "Feature-rich",
+      "description": "Product F comes packed with features, making it a comprehensive solution for your needs."
+    }
+  ]
+  
