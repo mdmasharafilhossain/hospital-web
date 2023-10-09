@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 import Swal from "sweetalert2";
@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 
 const Login = () => {
     const {SignIn} = useContext(AuthContext)
+    const [errorMessage, setErrorMessage] = useState('');
     const handleLogin =e  =>{
       e.preventDefault();
       console.log(e.currentTarget);
@@ -24,7 +25,9 @@ const Login = () => {
           })
       })
       .catch(error =>{
-        console.error(error)
+        console.error(error);
+        setErrorMessage(error.message)
+
       })
     }
     return (
@@ -53,6 +56,9 @@ const Login = () => {
                         <button className="btn btn-primary bg-green-600 border-none font-bold text-white text-base hover:bg-green-700">Login</button>
                     </div>
                 </form>
+                {
+                    errorMessage && <p className="text-sm font-bold text-red-700">{errorMessage}</p>
+                }
                 <p className="text-xl mt-10">New Here?Please <Link to="/register" className="font-bold text-green-600">Register</Link></p>
             </div>
 

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 import Swal from "sweetalert2";
@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 
 const Register = () => {
     const{createUser} = useContext(AuthContext);
+    const [errorMessage, setErrorMessage] = useState('');
 
 
     const handleRegister =e  =>{
@@ -16,7 +17,19 @@ const Register = () => {
         const email = form.get('email')
         const password = form.get('password')
         console.log(name,email,password)
-
+        setErrorMessage('');
+        if (password.length < 6) {
+            setErrorMessage("Password should be at least 6 characters")
+            return
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setErrorMessage("You shuold have atleast one uppercase letter")
+            return
+        }
+        else if(/^[a-zA-Z0-9]+$/.test(password)){
+            setErrorMessage("Use Atleast One special Character")
+            return
+        }
 
 
         createUser(email,password)
@@ -30,7 +43,8 @@ const Register = () => {
               })
         })
         .catch(error=>{
-            console.error(error)
+            console.error(error);
+            setErrorMessage(error.message)
         })
       }
     return (
@@ -53,6 +67,12 @@ const Register = () => {
                     </div>
                     <div className="form-control">
                         <label className="label">
+                            <span className="label-text">Photo URL</span>
+                        </label>
+                        <input type="text" placeholder="Photo URL" name="photo" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
                             <span className="label-text">Password</span>
                         </label>
                         <input type="password" placeholder="password" name="password"className="input input-bordered" required />
@@ -64,6 +84,9 @@ const Register = () => {
                         <button className="btn btn-primary bg-green-600 border-none font-bold text-white text-base hover:bg-green-700">Register</button>
                     </div>
                 </form>
+                {
+                    errorMessage && <p className="text-sm font-bold text-red-700">{errorMessage}</p>
+                }
                 <p className="text-xl mt-10">Already Have An Account?Please <Link to="/login" className="font-bold text-green-600">Login</Link></p>
             </div>
         </div>

@@ -16,10 +16,12 @@ import CardDetails from './Components/CardDetails/CardDetails';
 import Details from './Components/Details/Details';
 import MonthlyCare from './Components/MonthlyCare/MonthlyCare';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
