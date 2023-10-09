@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Treatment = ({service}) => {
@@ -12,7 +13,7 @@ const Treatment = ({service}) => {
              <h2 className="text-justify">{short_description}</h2>
              <h2 className="font-bold text-2xl mt-5 text-green-600 text-center">Price: ${price}</h2>
 
-            <button className="btn btn-primary w-full bg-green-600 border-none mt-7 text-white hover:bg-green-700 font-bold">Make An Appointment</button>
+           <Link to={`/service/${id}`}> <button className="btn btn-primary w-full bg-green-600 border-none mt-7 text-white hover:bg-green-700 font-bold">Make An Appointment</button></Link>
 
            </div>
 
