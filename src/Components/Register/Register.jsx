@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -15,8 +16,9 @@ const Register = () => {
         const form = new FormData(e.currentTarget);
         const name = form.get('name')
         const email = form.get('email')
+        const photo = form.get('photo')
         const password = form.get('password')
-        console.log(name,email,password)
+        console.log(name,email,password,photo)
         setErrorMessage('');
         if (password.length < 6) {
             setErrorMessage("Password should be at least 6 characters")
@@ -35,12 +37,19 @@ const Register = () => {
         createUser(email,password)
         .then(result =>{
             console.log(result.user);
+            const user = result.user;
+            updateProfile(user,{
+                displayName: name,
+                photoURL: photo,
+              });
+            
             Swal.fire({
                 title: 'Done',
                 text: 'Register Successfully',
                 icon: 'success',
                 confirmButtonText: 'Ok'
               })
+              
         })
         .catch(error=>{
             console.error(error);
