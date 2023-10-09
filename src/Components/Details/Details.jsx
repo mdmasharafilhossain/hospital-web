@@ -4,7 +4,7 @@ const Details = () => {
     return (
         <div className="mt-48">
             <h1 className="text-4xl font-bold text-center text-green-600"> All Details About Health Fair Of Our Hospital</h1>
-            <p className="mt-20 mx-10">A health fair organized by a hospital is a comprehensive community event aimed at enhancing public health awareness and promoting a culture of well-being. These fairs are thoughtfully designed to provide a diverse range of health-related activities and services to attendees. People from the community, regardless of age or background, are invited to participate and benefit from the wealth of information and resources available.
+            <p className="mt-20 mx-10 text-justify text-xl">A health fair organized by a hospital is a comprehensive community event aimed at enhancing public health awareness and promoting a culture of well-being. These fairs are thoughtfully designed to provide a diverse range of health-related activities and services to attendees. People from the community, regardless of age or background, are invited to participate and benefit from the wealth of information and resources available.
 
 One of the central components of a health fair is health screenings. These screenings may include checks for blood pressure, cholesterol levels, blood sugar, body mass index (BMI), vision, and other vital health indicators. Attendees have the opportunity to get these essential health metrics measured, helping them understand their current health status and identify potential risk factors. Early detection through these screenings can lead to timely interventions and improved health outcomes.
 
