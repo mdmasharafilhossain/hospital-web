@@ -13,6 +13,9 @@ import Register from './Components/Register/Register';
 import AboutUs from './Components/AboutUs/AboutUs';
 import AuthProviders from './Components/Providers/AuthProviders';
 import CardDetails from './Components/CardDetails/CardDetails';
+import Details from './Components/Details/Details';
+import MonthlyCare from './Components/MonthlyCare/MonthlyCare';
+import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +42,14 @@ const router = createBrowserRouter([
         path:"/about",
         element:<AboutUs></AboutUs>
       },
+      {
+        path:"/details",
+        element:<PrivateRoutes><Details></Details></PrivateRoutes>
+      },
+      {
+        path:"/care",
+        element:<PrivateRoutes><MonthlyCare></MonthlyCare></PrivateRoutes>
+      }
       
     ]
   },

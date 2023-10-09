@@ -60,6 +60,26 @@ const Header = () => {
                          Register
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="/details" style={{fontWeight:"bold",fontSize:"25px"}}
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-green-600 underline" : ""
+                            }
+                        >
+                         Details
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/care" style={{fontWeight:"bold",fontSize:"25px"}}
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "text-green-600 underline" : ""
+                            }
+                        >
+                         MonthlyCare
+                        </NavLink>
+                    </li>
                 </ul>
                
                 </div>

@@ -24,7 +24,7 @@ const CardDetails = () => {
              <div className="mx-10">
              <h2 className="text-3xl font-bold text-green-600 mt-10">Details :</h2>
              <h2 className="text-xl text-justify mt-5">{CardInfo.description}</h2>
-            <p className="text-3xl font-bold text-green-600 mt-10">Price :${CardInfo.price} only</p> 
+            <p className="text-3xl font-bold text-green-600 mt-10 mb-10">Price: ${CardInfo.price} only</p> 
              </div>
         </div>
     );
