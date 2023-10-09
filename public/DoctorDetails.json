@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image_url": "https://i.ibb.co/JKrB8tK/doctors-1.jpg",
+      "name": "Dr. Walter White",
+      "specialist": "Chief Medical Officer"
+    },
+    {
+      "id": 2,
+      "image_url": "https://i.ibb.co/MZCRdd0/doctors-2.jpg",
+      "name": "Dr. Sarah Johnson",
+      "specialist": "Neurosurgeon"
+    },
+    {
+      "id": 3,
+      "image_url": "https://i.ibb.co/SdYXPj6/doctors-3.jpg",
+      "name": "Dr. William Anderson",
+      "specialist": "Cardiology"
+    },
+    {
+      "id": 4,
+      "image_url": "https://i.ibb.co/3NrTHPQ/doctors-4.jpg",
+      "name": "Dr. Amanda Jepson",
+      "specialist": "Clinical Psychologist"
+    }
+  ]
+  
