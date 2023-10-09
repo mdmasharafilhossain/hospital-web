@@ -2,7 +2,7 @@
 
 const Details = () => {
     return (
-        <div className="mt-48">
+        <div className="mt-[500px] md:mt-52 lg:mt-48">
             <h1 className="text-4xl font-bold text-center text-green-600"> All Details About Health Fair Of Our Hospital</h1>
             <p className="mt-20 mx-10 text-justify text-xl">A health fair organized by a hospital is a comprehensive community event aimed at enhancing public health awareness and promoting a culture of well-being. These fairs are thoughtfully designed to provide a diverse range of health-related activities and services to attendees. People from the community, regardless of age or background, are invited to participate and benefit from the wealth of information and resources available.
 

@@ -20,7 +20,7 @@ const Doctors = () => {
             <p className="text-center mt-10">Our hospital is privileged to have a dedicated group of medical professionals committed to providing exceptional healthcare services to our patients. Our doctors are highly skilled, compassionate, and well-versed in a wide range of medical specialties.
 
                 With a focus on patient-centric care, our doctors strive to understand individual needs and provide personalized treatment plans. </p>
-                <div className="grid grid-cols-2 lg:grid-cols-4 pt-14 gap-10 pb-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-14 gap-10 pb-10">
                     {
                         data.map(card=><Doctor key={card.id} card={card}></Doctor>)
                     }

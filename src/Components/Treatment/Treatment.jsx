@@ -5,7 +5,7 @@ const Treatment = ({service}) => {
     const {id,image,image_2,short_description,price,name} = service;
     return (
         <div>
-           <div className="bg-white shadow-xl  px-10 py-10 border-b-8 border-green-600 h-[550px] rounded-xl">
+           <div className="bg-white shadow-xl  px-10 py-10 border-b-8 border-green-600 h-[650px] rounded-xl">
             <img className="mx-auto mb-3" src={image} alt="" />
             
             <h2 className="text-center font-bold text-3xl mb-5 text-green-600">{name}</h2>

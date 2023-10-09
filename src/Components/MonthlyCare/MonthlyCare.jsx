@@ -2,7 +2,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const MonthlyCare = () => {
     return (
-        <div className="pt-48 bg-gray-100">
+        <div className="mt-[500px] md:mt-72lg:pt-48 bg-gray-100">
             <h2 className="text-3xl font-bold text-center text-green-600">Here Our Monthly Package</h2>
            <div className='mt-10 border bg-white shadow-xl w-auto'>
            <div className=' flex justify-center'>

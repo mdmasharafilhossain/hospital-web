@@ -20,14 +20,14 @@ const Header = () => {
         <div className="">
             <div className="shadow-xl bg-white z-50  pb-5 fixed top-0 left-0 right-0 border">
                 <div className="container mx-auto mt-10 ">
-                    <nav className="flex items-center gap-5 justify-between">
+                    <nav className="flex flex-col md:flex-col lg:flex-row items-center gap-5 justify-between">
                         <div>
                             <img className="w-52 h-14" src={logo} alt="" />
                         </div>
 
                         {/* This is banner text */}
                         <div className="flex ">
-                            <ul className="flex gap-5 md:gap-10 lg:gap-12">
+                            <ul className="flex flex-col md:flex-col lg:flex-row gap-1 md:gap-10 lg:gap-12">
                                 <li>
                                     <NavLink
                                         to="/" style={{ fontWeight: "bold", fontSize: "25px" }}
